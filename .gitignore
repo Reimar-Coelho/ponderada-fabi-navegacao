@@ -1,2 +1,6 @@
 .temp/
 .vscode/
+build/
+install/
+log/
+__pycache__/
