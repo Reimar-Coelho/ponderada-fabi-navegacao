@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'parte1 = cg_reimar.parte1:main',
+            'parte2 = cg_reimar.parte2:main',
         ],
     },
 )

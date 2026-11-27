@@ -1,7 +1,5 @@
-import rclpy
-
 from .busca import achar, bfs, celulas_livres, para_direcoes
-from .cliente import Cliente
+from .cliente import rodar
 
 
 def resolver(no):
@@ -27,12 +25,4 @@ def resolver(no):
 
 
 def main():
-    rclpy.init()
-    no = Cliente('parte1')
-    try:
-        resolver(no)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        no.destroy_node()
-        rclpy.try_shutdown()
+    rodar('parte1', resolver)
